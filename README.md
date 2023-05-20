@@ -1,6 +1,6 @@
 # javascript-classes-notes
 
-1] 
+1] Getting Started
 
 ```
 class Rectangle{
