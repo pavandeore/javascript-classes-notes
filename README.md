@@ -129,5 +129,38 @@ console.log(p2.describe())
 
 ```
 
+5] Polymorphism 
 
+```
+// polymorphism
+// way to override a method in inherited class
+
+class Animal{
+  constructor(_name){
+    this.name = _name;
+  }
+  
+  makeSound(){
+    console.log('generic sound')
+  }
+}
+
+class Dog extends Animal{
+  constructor(name){
+    super(name)
+  }
+  
+  makeSound(){
+    //super.makeSound()  // this is also possible
+     console.log('dog modified sound')
+  }
+}
+
+let cat = new Animal('cat')
+let dog = new Dog('dog')
+
+console.log(cat.makeSound())
+console.log(dog.makeSound())
+
+```
 
