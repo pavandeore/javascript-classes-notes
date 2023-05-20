@@ -63,4 +63,32 @@ console.log(sq1.area)
 
 ```
 
+3] Static Methods
+
+```
+// static methods
+// it is a method called on class but is not a part of obj 
+// basically call methods without creating objs mostly used for performance and utlity 
+
+
+class Square{
+  constructor(_width){
+    this.width = _width
+  }
+  
+  static equal(a,b){
+    return a===b
+  }
+  
+}
+
+let squ1 = new Square(8)
+let squ2 = new Square(10)
+
+
+console.log(Square.equal(3,3))
+```
+
+
+
 
