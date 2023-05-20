@@ -89,6 +89,45 @@ let squ2 = new Square(10)
 console.log(Square.equal(3,3))
 ```
 
+4] Inheritance
+
+```
+
+// inheritance
+// create new class with less code copy down methods and props
+
+class Person{
+  constructor(_name, _age){
+    this.name = _name;
+    this.age = _age;
+  }
+  
+  describe(){
+    console.log('i am '+this.name)
+  }
+}
+
+
+
+class Programmer extends Person{
+  constructor(_name, _age, _yoe){
+    super(_name, _age)
+    
+    this.yoe = _yoe
+  }
+}
+
+
+let p1 = new Person('pawan',23)
+let p2 = new Programmer('akash',24,3)
+
+console.log(p1)
+console.log(p2)
+console.log(p2.describe())
+
+
+
+```
 
 
 
